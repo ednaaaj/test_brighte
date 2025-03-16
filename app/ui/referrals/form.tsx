@@ -69,58 +69,58 @@ export default function ReferralForm() {
 
       <div className="space-y-6">
         <section className="space-y-6">
-          <h3 className="text-xl font-semibold text-gray-900">
-            PERSONAL DETAILS
-          </h3>
+          <h3 className="text-md font-bold text-gray-500">PERSONAL DETAILS</h3>
+          <hr className="border-t border-gray-300" />
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <Input
               name="givenName"
               value={values.givenName}
               onChange={handleChange}
-              placeholder="Given Name"
+              label="Given Name"
               error={errors.givenName}
             />
             <Input
               name="surname"
               value={values.surname}
               onChange={handleChange}
-              placeholder="Surname"
+              label="Surname"
               error={errors.surname}
             />
             <Input
               name="email"
               value={values.email}
               onChange={handleChange}
-              placeholder="Email"
+              label="Email"
               error={errors.email}
             />
             <Input
               name="phone"
               value={values.phone}
               onChange={handleChange}
-              placeholder="Phone"
+              label="Phone"
               error={errors.phone}
             />
           </div>
         </section>
 
         <section className="space-y-6">
-          <h3 className="text-xl font-semibold text-gray-900">ADDRESS</h3>
+          <h3 className="text-md font-bold text-gray-500">ADDRESS</h3>
+          <hr className="border-t border-gray-300" />
 
           <div className="space-y-6">
             <Input
               name="homeName"
               value={values.homeName}
               onChange={handleChange}
-              placeholder="Home Name or #"
+              label="Home Name or #"
               error={errors.homeName}
             />
             <Input
               name="street"
               value={values.street}
               onChange={handleChange}
-              placeholder="Street"
+              label="Street"
               error={errors.street}
             />
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -128,28 +128,28 @@ export default function ReferralForm() {
                 name="suburb"
                 value={values.suburb}
                 onChange={handleChange}
-                placeholder="Suburb"
+                label="Suburb"
                 error={errors.suburb}
               />
               <Input
                 name="state"
                 value={values.state}
                 onChange={handleChange}
-                placeholder="State"
+                label="State"
                 error={errors.state}
               />
               <Input
                 name="postcode"
                 value={values.postcode}
                 onChange={handleChange}
-                placeholder="Postcode"
+                label="Postcode"
                 error={errors.postcode}
               />
               <Input
                 name="country"
                 value={values.country}
                 onChange={handleChange}
-                placeholder="Country"
+                label="Country"
                 error={errors.country}
               />
             </div>

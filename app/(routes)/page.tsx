@@ -3,7 +3,7 @@ import ReferralsTable from '@/ui/referrals/list'
 
 export default function ReferralsPage() {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen bg-white flex flex-col">
       <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-4 p-4">
         <div className="bg-white p-6 rounded-lg shadow-md h-full overflow-y-auto">
           <ReferralForm />

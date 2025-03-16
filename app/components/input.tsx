@@ -7,6 +7,7 @@ type InputProps = {
   placeholder?: string
   error?: string
   className?: string
+  label?: string
 }
 
 export function Input({
@@ -16,9 +17,15 @@ export function Input({
   placeholder,
   error,
   className = '',
+  label,
 }: InputProps) {
   return (
     <div className={className}>
+      {label && (
+        <label className="text-gray-500 font-bold text-xs uppercase">
+          {label}
+        </label>
+      )}
       <input
         name={name}
         value={value}
